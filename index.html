@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#151b67"><title>Team Jack</title>
+<style>
+:root{--blue:#17206f;--blue2:#243a9a;--card:#26378c;--card2:#1d2c7c;--pink:#ff4f9a;--text:#fff;--muted:#b9c1ed;--gold:#ffd45a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#8f94a4;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text)}
+.app{width:min(430px,100%);min-height:100vh;margin:auto;background:linear-gradient(180deg,#10165b,#202b83 55%,#11175d);box-shadow:0 0 55px rgba(0,0,0,.28);position:relative;padding-bottom:82px;overflow:hidden}
+.header{height:62px;padding:0 14px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(180deg,#202c87,#182169);position:sticky;top:0;z-index:10}.brand{font-size:23px;font-weight:1000;font-style:italic;letter-spacing:-1px}.brand span{color:#62c8ff}.bell{width:34px;height:34px;border-radius:10px;border:1px solid #5264c3;background:#2b3b94;display:grid;place-items:center}
+.hero{padding:12px 12px 5px}.hero img{width:100%;height:135px;object-fit:cover;border-radius:12px;display:block;box-shadow:0 8px 22px rgba(0,0,0,.2)}
+.notice{margin:10px 12px;padding:11px 12px;border-radius:9px;background:linear-gradient(90deg,#273a9b,#202f82);border:1px solid #4253ae;font-size:11px;line-height:1.45;color:#e7ebff}.notice b{color:#fff}.notice a{color:#66cfff;text-decoration:none;font-weight:800}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;padding:3px 12px 10px}.quick a{background:linear-gradient(180deg,#30449d,#25378d);border:1px solid #4659b2;border-radius:9px;padding:8px 4px;text-align:center;text-decoration:none;color:#fff;font-size:10px}.quick i{display:block;font-style:normal;font-size:19px;margin-bottom:3px}
+.section{padding:8px 12px}.section-head{display:flex;justify-content:space-between;align-items:center;margin:4px 2px 8px}.section-head h2{font-size:14px;margin:0}.section-head a{font-size:10px;color:#aebaff;text-decoration:none}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.card{min-height:108px;border-radius:10px;background:linear-gradient(145deg,#30449c,#202f80);border:1px solid #4255b0;overflow:hidden;position:relative}.card .pic{height:68px;background:linear-gradient(135deg,#5146bd,#f84f9b);display:grid;place-items:center;font-size:30px}.card:nth-child(2) .pic{background:linear-gradient(135deg,#1a83d8,#55d4ff)}.card:nth-child(3) .pic{background:linear-gradient(135deg,#f7a42b,#ff4d76)}.card:nth-child(4) .pic{background:linear-gradient(135deg,#3dca9a,#2276c9)}.card .txt{padding:7px 8px}.card strong{font-size:11px}.card small{display:block;color:#bbc4ef;font-size:9px;margin-top:2px}
+.feature{margin-top:8px;padding:12px;border-radius:11px;background:linear-gradient(135deg,#2d419b,#1d2b76);border:1px solid #4558b0}.feature h3{margin:0 0 5px;font-size:13px}.feature p{margin:0;color:#c0c8ed;font-size:10px;line-height:1.5}.feature .cta{display:inline-block;margin-top:9px;padding:7px 12px;border-radius:8px;background:#32a9ff;color:#fff;text-decoration:none;font-size:10px;font-weight:900}
+.social{position:fixed;right:max(calc((100vw - 430px)/2 - 2px),10px);top:44%;display:flex;flex-direction:column;gap:7px;z-index:20}.social a{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;text-decoration:none;color:#fff;font-size:17px;box-shadow:0 4px 12px rgba(0,0,0,.2);border:2px solid rgba(255,255,255,.75)}.ig{background:#ed4f9d}.wa{background:#28bd70}
+.legal{margin:0 12px;padding:12px;border-radius:10px;background:#1b276e;border:1px solid #3b4c9f;color:#bfc7ec;font-size:10px;line-height:1.6}.legal h3{color:#fff;font-size:12px;margin:0 0 5px}.legal p{margin:0 0 9px}.legal p:last-child{margin:0}
+.bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(430px,100%);height:72px;background:linear-gradient(180deg,#172166,#101752);border-top:1px solid #39499b;display:grid;grid-template-columns:repeat(4,1fr);z-index:30}.bottom a{color:#aeb8e8;text-decoration:none;text-align:center;padding-top:10px;font-size:9px}.bottom a.active{color:#fff}.bottom i{display:block;font-style:normal;font-size:20px;margin-bottom:3px}.bottom .center{position:relative;margin-top:-17px}.bottom .center span{display:grid;place-items:center;width:52px;height:52px;margin:auto;border-radius:50%;background:linear-gradient(135deg,#ffb329,#ff5d8f);border:4px solid #172166;box-shadow:0 5px 18px rgba(0,0,0,.35);font-size:22px}.bottom .center b{font-size:9px;font-weight:700}
+@media(min-width:700px){body{padding:18px 0}.app{border-radius:18px;min-height:calc(100vh - 36px)}.header{position:sticky;border-radius:18px 18px 0 0}.bottom{bottom:18px;border-radius:0 0 18px 18px}}
+</style></head>
+<body>
+<div class="app" id="home">
+<header class="header"><div class="brand">TEAM <span>JACK</span></div><div class="bell">🔔</div></header>
+<div class="hero"><img src="team-jack-logo.jpg" alt="Team Jack"></div>
+<div class="notice"><b>Welcome to Team Jack</b><br>Community updates, guides and official links in one place. <a href="#about">Read more →</a></div>
+<div class="quick"><a href="#about"><i>👥</i>Community</a><a href="#updates"><i>⚡</i>Updates</a><a href="#guide"><i>📘</i>Guide</a><a href="#contact"><i>💬</i>Contact</a></div>
+<section class="section" id="updates"><div class="section-head"><h2>Latest Updates</h2><a href="#contact">View all</a></div><div class="cards">
+<div class="card"><div class="pic">⚡</div><div class="txt"><strong>Team Updates</strong><small>Latest announcements</small></div></div>
+<div class="card"><div class="pic">🤝</div><div class="txt"><strong>Community</strong><small>Connect with the team</small></div></div>
+<div class="card"><div class="pic">🎯</div><div class="txt"><strong>Our Mission</strong><small>Trust • Unity • Respect</small></div></div>
+<div class="card"><div class="pic">🌟</div><div class="txt"><strong>Team Jack</strong><small>One team, one family</small></div></div>
+</div></section>
+<section class="section" id="about"><div class="section-head"><h2>About Team Jack</h2></div><div class="feature"><h3>One Team. One Family. One Legacy.</h3><p>Team Jack is a community-focused platform for sharing updates, information and official contact links in a clean, mobile-friendly experience.</p><a class="cta" href="#contact">Connect With Us</a></div></section>
+<section class="section" id="guide"><div class="section-head"><h2>Community Guide</h2></div><div class="cards"><div class="card"><div class="pic">🛡️</div><div class="txt"><strong>Trust</strong><small>Clear and respectful communication</small></div></div><div class="card"><div class="pic">❤️</div><div class="txt"><strong>Respect</strong><small>Positive community interaction</small></div></div></div></section>
+<section class="section"><div class="section-head"><h2>Risk & Disclaimer</h2></div><div class="legal"><h3>Educational & Informational</h3><p>This website is for general educational and informational purposes only. It does not provide betting, gambling, wagering or financial services.</p><h3>Third-Party Links</h3><p>Instagram and WhatsApp are external services. Their own terms and privacy policies apply.</p><h3>Responsible Use</h3><p>Use this website only where permitted by applicable law and platform rules.</p></div></section>
+<section class="section" id="contact"><div class="section-head"><h2>Official Contact</h2></div><div class="feature"><h3>Stay Connected</h3><p>Use the official Team Jack social and contact channels.</p><a class="cta" href="https://www.instagram.com/vikashchoudhary.666" target="_blank" rel="noopener">Open Instagram →</a></div></section>
+</div>
+<div class="social"><a class="ig" href="https://www.instagram.com/vikashchoudhary.666" target="_blank" rel="noopener">◎</a><a class="wa" href="https://wa.me/917357839694" target="_blank" rel="noopener">◉</a></div>
+<nav class="bottom"><a class="active" href="#home"><i>⌂</i>Home</a><a href="#updates"><i>▣</i>Updates</a><a class="center" href="#about"><span>★</span><b>Team Jack</b></a><a href="#guide"><i>▤</i>Guide</a></nav>
+</body></html>
